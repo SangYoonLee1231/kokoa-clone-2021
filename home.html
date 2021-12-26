@@ -2,26 +2,51 @@
 <html lang="kr">
   <head>
     <style>
+      * {
+        border: 1px dashed black;
+      }
       html {
         background-color: tomato;
       }
       body {
         margin: 0;
+        padding: 20px;
         background-color: thistle;
       }
       div {
-        margin: 50px 15px;
-        height: 150px;
-        width: 150px;
-        background-color: whitesmoke;
+        padding: 20px;
       }
       span {
         background-color: turquoise;
+      }
+      #first {
+        background-color: whitesmoke;
+        height: 150px;
+        width: 150px;
+      }
+      #second {
+        height: 100px;
+        width: 100px;
+        background-color: teal;
+      }
+      #third {
+        height: 50px;
+        width: 50px;
+        background-color: wheat;
+      }
+      span {
+        border-style: dotted;
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div></div>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <span>hello</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
