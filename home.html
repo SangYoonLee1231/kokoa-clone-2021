@@ -11,14 +11,29 @@
         padding: 5px;
         border-radius: 10px;
       }
-      input {
-        border: 1px solid wheat;
+      input:focus {
+        background-color: tomato;
       }
-      input:required {
-        border-color: tomato;
+      a:visited {
+        color: tomato;
       }
-      input[placeholder~="Name"] {
-        background-color: pink;
+      a:hover {
+        color: teal;
+      }
+      a:focus {
+        color: turquoise salmon;
+      }
+      form {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      form:focus-within {
+        border-color: seagreen;
+      }
+      form:hover input:focus {
+        background-color: sienna;
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
@@ -26,9 +41,18 @@
   <body>
     <div>
       <form>
-        <input type="text" placeholder="First Name" />
-        <input type="password" placeholder="Last Name" />
-        <input type="password" required placeholder="password" />
+        <button>Hello</button>
+        <input type="text" />
+        <input type="text" />
+        <a href="https://apple.com">Go to Apple</a>
+
+        <br />
+
+        <form>
+          <input type="text" name="" id="" />
+          <input type="text" name="" id="" />
+          <input type="text" name="" id="" />
+        </form>
       </form>
     </div>
   </body>
