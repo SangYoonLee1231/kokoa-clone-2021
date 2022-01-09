@@ -6,60 +6,39 @@
         height: 1000vh;
         margin: 20px;
       }
-      div:last-child {
-        background-color: seagreen;
-      }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
-      }
+
       input:focus {
         background-color: tomato;
       }
-      a:visited {
-        color: tomato;
+      input::placeholder {
+        color: yellowgreen;
       }
-      a:hover {
-        color: teal;
+      p::selection {
+        background-color: green;
+        color: white;
       }
-      a:focus {
-        color: turquoise salmon;
+      p::first-line {
+        background-color: yellowgreen;
+        color: white;
+        font-size: 30px;
       }
-      form {
-        border: 1px solid;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-      }
-      form:focus-within {
-        border-color: seagreen;
-      }
-      form:hover input:focus {
-        background-color: sienna;
+      span::first-letter {
+        color: white;
+        font-size: 30px;
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <form>
-        <button>Hello</button>
-        <input type="text" />
-        <input type="text" />
-        <a href="https://apple.com">Go to Apple</a>
-
-        <br />
-
-        <form>
-          <input type="text" name="" id="" />
-          <input type="text" name="" id="" />
-          <input type="text" name="" id="" />
-        </form>
-      </form>
-    </div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
+    <form>
+      <input type="text" placeholder="Name" />
+    </form>
+    <span>Hello</span>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+      voluptates, neque, fuga libero labore ad provident dolorem itaque
+      doloremque commodi quibusdam ab nihil ducimus quis nostrum non, quo
+      impedit! Ipsa.
+    </p>
   </body>
 </html>
