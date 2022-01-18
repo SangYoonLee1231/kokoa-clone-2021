@@ -2,40 +2,24 @@
 <html lang="kr">
   <head>
     <style>
-      :root {
-        --main-color: #85e617;
-        --default-border: 1px solid var(--main-color);
-      }
-      body {
-        height: 1000vh;
-        margin: 20px;
-      }
-      p {
-        background-color: rgba(252, 206, 0, 0.2);
-      }
-      span {
-        color: rgb(252, 206, 0);
-      }
       a {
-        color: var(--main-color);
-        border: var(--default-border);
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 10px;
+        font-size: 50px;
+        transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+      }
+      a:hover {
+        color: tomato;
+        border-radius: 25px;
+        background-color: wheat;
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="Name" />
-    </form>
-    <span>Hello</span>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-      voluptates, neque, fuga libero labore ad provident dolorem itaque
-      doloremque commodi quibusdam ab nihil ducimus quis nostrum non, quo
-      impedit! Ipsa.
-    </p>
-    <div>
-      <a href="#">link</a>
-    </div>
+    <a href="#">Go home</a>
   </body>
 </html>
