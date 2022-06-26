@@ -2,19 +2,41 @@
 <html lang="kr">
   <head>
     <style>
-      img {
-        border: 5px solid black;
-        border-radius: 50%;
-        transition: transform 1s ease-in-out;
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
-      img:hover {
-        transform: matrix(1, 2, 3, 4, 5, 6);
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape /*portrait*/) {
+        div {
+          background-color: wheat;
+        }
+      }
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="img/logo.jpg" width="250px" alt="" />
-    <span>fsfsfsdsdfs</span>
+    <div></div>
+    <span>Please Filp Your Phone</span>
   </body>
 </html>
