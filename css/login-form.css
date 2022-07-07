@@ -1,0 +1,41 @@
+.login-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.login-form__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.login-form__submit {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form__input input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 60px;
+    font-size: 18px;
+    transition: border-color .3s ease-in-out;
+}
+
+.login-form__submit input {
+    margin: 7px 0px;
+    height: 55px;
+    font-size: 18px;
+}
+
+.login-form__input input::placeholder {
+    /*opacity: 0.3;*/
+    color: rgba(0, 0, 0, 0.4);
+    /*opacity: 0.3과 rgba(0, 0, 0 ,0)은 투명도가 다르다. (opacity가 더 흐림)*/
+}
+
+.login-form__input input:focus {
+    border-color: var(--yellow);
+}
