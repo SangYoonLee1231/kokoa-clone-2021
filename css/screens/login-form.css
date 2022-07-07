@@ -11,7 +11,7 @@
     margin-bottom: 25px;
 }
 
-.login-form__submit {
+.login-form__btn {
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +24,7 @@
     transition: border-color .3s ease-in-out;
 }
 
-.login-form__submit input {
+.login-form__btn input {
     margin: 7px 0px;
     height: 55px;
     font-size: 18px;
@@ -38,4 +38,17 @@
 
 .login-form__input input:focus {
     border-color: var(--yellow);
+}
+
+.login-form__btn input {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form a {
+    margin-top: 20px;
+    color: inherit;
+    text-decoration-line: none;
 }

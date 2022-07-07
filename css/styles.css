@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Splash&family=Work+Sans:wght@200;300;400;500&display=swap');
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
 @import "welcome-header.css";
-@import "login-form.css";
+
+/* Components */
+@import "components/status-bar.css";
+
+/* Screens */
+@import "screens/login-form.css";
 
 body {
     font-family: 'Work Sans', sans-serif;
