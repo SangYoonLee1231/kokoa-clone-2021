@@ -1,18 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Splash&family=Work+Sans:wght@200;300;400;500&display=swap');
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Splash&family=Work+Sans:wght@200;300;400;500&display=swap");
+
 @import "reset.css";
 @import "variables.css";
 @import "welcome-header.css";
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
 
 /* Screens */
 @import "screens/login-form.css";
 
 body {
-    font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
+}
+
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
