@@ -1,54 +1,54 @@
 .login-form {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
 }
 
 .login-form__input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .login-form__btn {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-form__input input {
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    height: 60px;
-    font-size: 18px;
-    transition: border-color .3s ease-in-out;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  height: 60px;
+  font-size: 18px;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .login-form__btn input {
-    margin: 7px 0px;
-    height: 55px;
-    font-size: 18px;
+  margin: 7px 0px;
+  height: 55px;
+  font-size: 18px;
 }
 
 .login-form__input input::placeholder {
-    /*opacity: 0.3;*/
-    color: rgba(0, 0, 0, 0.4);
-    /*opacity: 0.3과 rgba(0, 0, 0 ,0)은 투명도가 다르다. (opacity가 더 흐림)*/
+  /*opacity: 0.3;*/
+  color: rgba(0, 0, 0, 0.4);
+  /*opacity: 0.3과 rgba(0, 0, 0 ,0)은 투명도가 다르다. (opacity가 더 흐림)*/
 }
 
 .login-form__input input:focus {
-    border-color: var(--yellow);
+  border-color: var(--yellow);
 }
 
 .login-form__btn input {
-    background-color: var(--yellow);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-form a {
-    margin-top: 20px;
-    color: inherit;
-    text-decoration-line: none;
+  margin-top: 20px;
+  color: inherit;
+  text-decoration-line: none;
 }
