@@ -38,6 +38,7 @@
 
 .login-form__input input:focus {
   border-color: var(--yellow);
+  outline: none;
 }
 
 .login-form__btn input {
