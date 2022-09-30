@@ -3,7 +3,6 @@
 
 @import "reset.css";
 @import "variables.css";
-@import "welcome-header.css";
 
 /* Components */
 @import "components/status-bar.css";
@@ -11,6 +10,7 @@
 
 /* Screens */
 @import "screens/login-form.css";
+@import "screens/welcome-header.css";
 
 body {
   font-family: "Work Sans", sans-serif;
